@@ -1,0 +1,13 @@
+[Unit]
+Description=Hyprland's wallpaper utility
+Documentation=https://wiki.hyprland.org/Hypr-Ecosystem/hyprpaper
+ConditionEnvironment=WAYLAND_DISPLAY
+BindsTo=hyprland-session.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/hyprpaper
+Restart=on-failure
+
+[Install]
+WantedBy=hyprland-session.target
