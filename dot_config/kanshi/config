@@ -1,0 +1,23 @@
+profile undocked {
+   output eDP-1 enable
+}
+
+profile docked {
+   output "Acer Technologies XV242Y TL1EE0018521" {
+      enable
+      position 0,0
+      mode 1920x1080@60Hz
+   }
+
+   output "Philips Consumer Electronics Company PHL 243V5 ZV01449014849" {
+      enable
+      position 1920,0
+      mode 1920x1080@60Hz
+   }
+
+   output "eDP-1" {
+      enable
+      position 3840,0
+      mode 1920x1080@60Hz
+   }
+}
