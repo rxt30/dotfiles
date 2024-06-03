@@ -1,0 +1,64 @@
+@import "mocha.css";
+
+window#waybar {
+  background-color: @crust;
+  /* background-color: rgba(46, 52, 64, 0.8); */
+}
+
+#custom-searchMenu,
+#window,
+#tray,
+#cpu,
+#memory,
+#pulseaudio,
+#battery,
+#backlight,
+#clock,
+#custom-spotify,
+#custom-power,
+#network {
+  /* color: rgb( 143, 188, 187); */
+  font-family: FontAwesome, Roboto, Helvetica, Arial, sans-serif;
+  color: @text;
+  padding: 0 10px;
+  margin: 4px 4px;
+  /* background-color: rgb( 96, 106, 126); */
+  background-color: @surface0;
+  border: 1px;
+  border-radius: 10;
+  font-size: 13px;
+}
+
+#battery.warning {
+  background-color: @yellow;
+  color: @surface0;
+}
+
+#battery.recharge {
+  background-color: rgb(208, 135, 112);
+}
+
+#battery.critical {
+  background-color: @red;
+  color: @surface0;
+}
+
+#taskbar button,
+#workspaces button {
+  /* color: rgb( 143, 188, 187); */
+  color: @text;
+  margin: 4px 4px;
+  padding: 0 10px;
+}
+
+#taskbar button.active {
+  border-radius: 10;
+  background-color: rgb(163, 190, 140);
+}
+
+#workspaces button.focused {
+  /* color: rgb( 46, 52, 64); */
+  color: @text;
+  background-color: rgb(163, 190, 140);
+  border-radius: 10;
+}
